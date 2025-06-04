@@ -1,0 +1,208 @@
+/* Filtros */
+.search-input,
+.month-filter,
+.type-filter {
+    border: 1px solid #e5e7eb;
+    margin-bottom: 0.5rem;
+}
+
+.search-input:focus,
+.month-filter:focus,
+.type-filter:focus {
+    outline: none;
+    border-color: #bad1cf;
+    box-shadow: 0 0 0 2px rgba(186, 209, 207, 0.2);
+}
+
+.no-results {
+    padding: 2rem;
+    text-align: center;
+    color: #6b7280;
+}
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #bad1cf;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Base styles */
+body {
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+  min-height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Card container */
+.event-card {
+  max-width: 800px;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Card header */
+.card-header {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+}
+
+.card-header h1 {
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Events list */
+.events-list {
+  border-top: 1px solid #e5e7eb;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  gap: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Event date */
+.event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  min-width: 3rem;
+}
+
+.event-date .day {
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.event-date .month {
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/* Event details */
+.event-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.event-details h2 {
+  color: black;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.event-time,
+.event-location,
+.event-endereco,
+.event-website, 
+.event-period{
+  color: #4b5563;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-top: 0.125rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.event-location a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.event-location a:hover {
+  text-decoration: underline;
+}
+
+.event-website a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.event-website a:hover {
+  text-decoration: underline;
+}
+
+/* Event image */
+.event-image {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+/* Card footer */
+.card-footer {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.load-more-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #f3f4f6;
+  color: black;
+  font-size: 0.875rem;
+  font-weight: 400;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.load-more-btn:hover {
+  background-color: #e5e7eb;
+}
+
+.load-more-btn i {
+  font-size: 0.75rem;
+}
+
+/* Placeholder para imagem ausente */
+.no-image {
+  width: 4rem;
+  height: 4rem;
+  background-color: #f3f4f6;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+}
+
+.no-image i {
+  font-size: 1.5rem;
+}
